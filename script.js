@@ -53,8 +53,8 @@ for(let i = 1; i <= rows_num; i++){
     board.append(cellContainer);
 }
 
-//let tg = window.Telegram.WebApp;
-//tg.sendData("some string that we need to send");
+let tg = window.Telegram.WebApp;
+tg.sendData("some string that we need to send");
 
 /*
 function updateColor(){
