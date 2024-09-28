@@ -18,6 +18,8 @@ let row_size = field_size / rows_num;
 let row_size_str = row_size + "px";
 let checker_size_str = (row_size * 9)/10 + "px"
 
+let tg = window.Telegram.WebApp;
+
 for(let i = 1; i <= rows_num; i++){
     const cellContainer = document.createElement("div");
     cellContainer.className = "cellContainer";
@@ -46,7 +48,8 @@ for(let i = 1; i <= rows_num; i++){
             //checker.addEventListener("click", updateColor(i,j));
             checker.addEventListener("click", function (){
                 data_str = `string: ${i}, ${j}`;
-                window.alert(data_str);
+                //window.alert(data_str);
+                tg.sendData(data_str);
             });
 
             cell.append(checker);
@@ -59,17 +62,5 @@ for(let i = 1; i <= rows_num; i++){
     }
 
     board.append(cellContainer);
-}
-
-let tg = window.Telegram.WebApp;
-
-
-
-//function updateColor(){
-function updateColor(i,j){
-data_str = `string: ${i}, ${j}`;
-//    data_str = "send: ${i}, ${j}";
-    //tg.sendData();    
-    window.alert(data_str);
 }
 
