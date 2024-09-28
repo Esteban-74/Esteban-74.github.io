@@ -39,7 +39,15 @@ for(let i = 1; i <= rows_num; i++){
             checker.style.height = checker_size_str;
             checker.style.backgroundColor = "green";
 
-            //checker.onclick = 'updateColor()';
+            //checker.onclick = `updateColor(${i}, ${j})`;
+            //checker.onclick = "'updateColor(" + i + "," + j +")'";
+            //checker.onclick = "updateColor();";
+
+            //checker.addEventListener("click", updateColor(i,j));
+            checker.addEventListener("click", function (){
+                data_str = `string: ${i}, ${j}`;
+                window.alert(data_str);
+            });
 
             cell.append(checker);
 
@@ -54,10 +62,14 @@ for(let i = 1; i <= rows_num; i++){
 }
 
 let tg = window.Telegram.WebApp;
-tg.sendData("some string that we need to send");
 
-/*
-function updateColor(){
 
+
+//function updateColor(){
+function updateColor(i,j){
+data_str = `string: ${i}, ${j}`;
+//    data_str = "send: ${i}, ${j}";
+    //tg.sendData();    
+    window.alert(data_str);
 }
-*/
+
