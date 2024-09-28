@@ -14,3 +14,8 @@ body {
 .cell {
     border: 1px solid green;
 }
+
+.checker {
+    border: 3px solid green;
+    border-radius: 50%;
+  }
