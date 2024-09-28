@@ -31,6 +31,7 @@ for(let i = 1; i <= rows_num; i++){
         if ( ((i+j)%2) > 0 ) {
             cell.style.backgroundColor = "black";
         }
+        /*
         if ((i<4) && (((i+j)%2) > 0)){
             const checker = document.createElement("div");
             checker.className = "checker";
@@ -43,6 +44,7 @@ for(let i = 1; i <= rows_num; i++){
             cell.append(checker);
 
         }
+            */
         cellContainer.append(cell); 
 
 
@@ -51,8 +53,8 @@ for(let i = 1; i <= rows_num; i++){
     board.append(cellContainer);
 }
 
-let tg = window.Telegram.WebApp;
-tg.sendData("some string that we need to send");
+//let tg = window.Telegram.WebApp;
+//tg.sendData("some string that we need to send");
 
 /*
 function updateColor(){
