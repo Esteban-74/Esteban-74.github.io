@@ -1,19 +1,18 @@
 
-/**
-let tg = window.Telegram.WebApp;
+let board = document.getElementById('board')
 
-window.alert(window.innerWidth);
-window.alert(window.innerHeight);
+//window.alert(window.screen.width);
+//window.alert(window.screen.height);
 
-const c = document.getElementById("myCanvas");
-const ctx = c.getContext("2d");
+let rows_num = 8;
+for(let i = 1; i <= rows_num; i++){
+    const cellContainer = document.createElement("div");
+    cellContainer.className = "cellContainer";
+    for( let j = 0; j<=rows_num; j++ ){
+        const cell = document.createElement("div");
+        cell.className = "cell";
+        cellContainer.append(cell); 
+    }
 
-ctx.beginPath();
-ctx.rect(250, 20, 300, 100);
-ctx.stroke();
-ctx.fillStyle = "red";
-ctx.fill();
-*/
-
-window.alert(window.screen.width);
-window.alert(window.screen.height);
+    board.append(cellContainer);
+}
