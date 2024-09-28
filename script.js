@@ -39,7 +39,7 @@ for(let i = 1; i <= rows_num; i++){
             checker.style.height = checker_size_str;
             checker.style.backgroundColor = "green";
 
-            checker.onclick = 'updateColor()';
+            //checker.onclick = 'updateColor()';
 
             cell.append(checker);
 
