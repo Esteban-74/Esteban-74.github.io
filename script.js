@@ -45,6 +45,10 @@ for(let i = 1; i <= rows_num; i++){
                     cell.className = "cell_black with_pawn_white_selected";
                 } else if (cell.className === "cell_black with_pawn_white_selected"){
                     cell.className = "cell_black with_pawn_white";
+                } else if (cell.className === "cell_black with_pawn_black") {
+                    cell.className = "cell_black with_pawn_black_selected";
+                } else if (cell.className === "cell_black with_pawn_black_selected"){
+                    cell.className = "cell_black with_pawn_black";
                 }
 
                 tg.sendData(data_str);

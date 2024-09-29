@@ -61,3 +61,17 @@ body {
     background-color: yellow;
     position: relative;
   }
+
+  .cell_black.with_pawn_black_selected::before {
+    content: '';
+    display: inline-block;
+
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+
+    background-color: red;
+    position: relative;
+  }
