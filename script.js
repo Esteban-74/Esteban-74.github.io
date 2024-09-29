@@ -28,7 +28,7 @@ for(let i = 1; i <= rows_num; i++){
         cell.style.width = row_size_str;
         cell.style.height = row_size_str;
 
-        if ( ((i+j)%2) > 0 ) {
+        if ( ((i+j)%2) ===0 ) {
             cell.className = "cell_white";
         } else {
             if (i>5) {
