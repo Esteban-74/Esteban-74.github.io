@@ -57,3 +57,4 @@ for(let i = 1; i <= rows_num; i++){
     board.append(cellContainer);
 }
 
+tg.expand();
