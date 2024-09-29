@@ -38,9 +38,15 @@ for(let i = 1; i <= rows_num; i++){
             }else {
                 cell.className = "cell_black";
             }
-            //cell.addEventListener("click", function (){
-            //    data_str = `string: ${i}, ${j}`;
-            //});
+            
+            cell.addEventListener("click", function (){
+                //data_str = `string: ${i}, ${j}`;
+                if (cell.className === "cell_black with_pawn_white"){
+                    cell.className = "cell_black with_pawn_white_selected";
+                } else if (cell.className === "cell_black with_pawn_white_selected"){
+                    cell.className = "cell_black with_pawn_white";
+                }
+            });
         }
         cellContainer.append(cell); 
 
