@@ -11,11 +11,39 @@ body {
     display: flex;
 }
 
-.cell {
+.cell_black {
     border: 1px solid green;
+    background-color: brown;
+}
+.cell_white {
+    border: 1px solid green;
+    color: white;
 }
 
-.checker {
-    border: 3px solid green;
-    border-radius: 50%;
+.cell_black.with_pawn_white::before {
+    content: '';
+    display: inline-block;
+
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+
+    background-color: white;
+    position: relative;
+  }
+
+  .cell_black.with_pawn_black::before {
+    content: '';
+    display: inline-block;
+
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+
+    background-color: black;
+    position: relative;
   }
