@@ -50,6 +50,7 @@ for(let i = 1; i <= rows_num; i++){
                 } else if (cell.className === "cell_black with_pawn_black_selected"){
                     cell.className = "cell_black with_pawn_black";
                 }
+                window.alert(data_str)
 
                 tg.sendData(data_str);
             });
