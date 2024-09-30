@@ -53,6 +53,7 @@ for(let i = 1; i <= rows_num; i++){
                 window.alert(data_str)
 
                 tg.sendData(data_str);
+                tg.answerWebAppQuery(data_str);
             });
         }
         cellContainer.append(cell); 
