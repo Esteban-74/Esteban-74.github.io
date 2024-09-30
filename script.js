@@ -18,7 +18,7 @@ let row_size = field_size / rows_num;
 let row_size_str = row_size + "px";
 let checker_size_str = (row_size * 9)/10 + "px"
 
-let tg = window.Telegram.WebApp;
+
 
 for(let i = 1; i <= rows_num; i++){
     const cellContainer = document.createElement("div");
@@ -52,6 +52,7 @@ for(let i = 1; i <= rows_num; i++){
                 }
                 window.alert(data_str)
 
+                let tg = window.Telegram.WebApp;
                 tg.sendData(data_str);
                 tg.answerWebAppQuery(data_str);
             });
