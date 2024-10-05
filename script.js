@@ -1,9 +1,13 @@
 
 let board = document.getElementById('board')
 
-//window.alert(window.screen.width);
+//tg = window.Telegram.WebApp;
+//tg.showAlert('here');
+
+window.alert(window.screen.width);
 //window.alert(window.screen.height);
 
+/*
 var w = window.innerWidth;
 var h = window.innerHeight;
 
@@ -65,3 +69,4 @@ for(let i = 1; i <= rows_num; i++){
 }
 
 tg.expand();
+*/
