@@ -5,7 +5,12 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
         tg = window.Telegram.WebApp;
-        tg.showAlert('here and there');
+
+        try {
+            tg.showAlert('here and there and error');
+        } catch (error) {
+            tg.showAlert('error');
+        }
     </script>
 </head>
 <body></body>
