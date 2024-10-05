@@ -7,7 +7,7 @@
         tg = window.Telegram.WebApp;
 
         try {
-            tg.showAlert('here and there and error');
+            tg.showAlert(tg.initData);
         } catch (error) {
             tg.showAlert('error');
         }
