@@ -8,6 +8,7 @@
 
         try {
             str = tg.initData;
+            tg.showAlert(typeof str);
 
             if (typeof str === "string" && str.length === 0) {
                 tg.showAlert("The string is empty");
@@ -16,7 +17,6 @@
             } else {
                 tg.showAlert("The string is not empty or null");
             }
-            tg.showAlert(typeof str);
         } catch (error) {
             tg.showAlert('error');
         }
