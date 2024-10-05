@@ -4,8 +4,8 @@ let board = document.getElementById('board')
 //tg = window.Telegram.WebApp;
 //tg.showAlert('here');
 
-window.alert(window.screen.width);
-//window.alert(window.screen.height);
+//window.alert(window.screen.width);
+window.alert(window.screen.height);
 
 /*
 var w = window.innerWidth;
